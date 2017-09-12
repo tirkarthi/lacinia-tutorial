@@ -1,0 +1,27 @@
+{:objects
+ {:track
+  {:fields {:trackid {:type Int}
+            :trackname {:type String}
+            :trackartist {:type (list :artist)
+                          :resolve :get-artist}}}
+  :artist
+  {:fields {:artistid {:type Int}
+            :artistname {:type String}
+            :tracks {:type (list :track)
+                     :resolve :get-tracks}}}}
+ :mutations
+ {:createArtist
+  {:resolve :create-artist
+   :type (list :artist)
+   :args {:artistname {:type String}}}}
+ :queries
+ {:artist
+  {:resolve :get-artist
+   :type (list :artist)
+   :args {:id {:type Int}
+          :name {:type String}}}
+  :track
+  {:resolve :get-tracks
+   :type (list :track)
+   :args {:trackid {:type Int}
+          :trackname {:type String}}}}}
