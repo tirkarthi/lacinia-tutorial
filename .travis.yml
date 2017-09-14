@@ -1,0 +1,6 @@
+language: clojure
+install: python create-db.py
+script: lein with-profile test test
+
+notifications:
+  email: false

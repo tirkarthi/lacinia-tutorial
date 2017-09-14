@@ -19,9 +19,11 @@
   {:resolve :get-artist
    :type (list :artist)
    :args {:id {:type Int}
+          :limit {:type Int}
           :name {:type String}}}
   :track
   {:resolve :get-tracks
    :type (list :track)
    :args {:trackid {:type Int}
+          :first {:type Int}
           :trackname {:type String}}}}}

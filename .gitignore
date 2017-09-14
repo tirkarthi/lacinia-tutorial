@@ -1,5 +1,6 @@
 *.db
 *~
+*#
 /target
 /classes
 /checkouts
