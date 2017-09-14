@@ -10,5 +10,8 @@
                  [environ "1.1.0"]
 		 [cheshire "5.8.0"]]
   :main ^:skip-aot lacinia-tut.run
+  :plugins [[lein-environ "1.1.0"]]
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:uberjar {:aot :all}
+             :dev  {:env {:database "dev.db"}}
+             :test {:env {:database "test.db"}}})

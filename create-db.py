@@ -36,10 +36,6 @@ with open('tracks.json') as f:
     values (:trackid, :trackname, :trackartist)
     ''', data)
 
-print("Creating .lein-env for testing")
-with open('.lein.env', 'w') as f:
-    f.write('''{:env {:database-url "test.db"}}''')
-
 db.commit()
 cursor.close()
 db.close()
