@@ -12,7 +12,7 @@
 (def db
   {:classname   "org.sqlite.JDBC"
    :subprotocol "sqlite"
-   :subname     (env :database "app.db")})
+   :subname     (env :database "test.db")})
 
 (defn get-tracks [context arguments value]
   (let [{:keys [artistid trackname trackid]} value

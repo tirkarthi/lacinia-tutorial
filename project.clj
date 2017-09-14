@@ -11,5 +11,4 @@
 		 [cheshire "5.8.0"]]
   :main ^:skip-aot lacinia-tut.run
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}
-             :test {:env {:database "test.db"}}})
+  :profiles {:uberjar {:aot :all}})
