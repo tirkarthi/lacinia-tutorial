@@ -10,7 +10,7 @@ A simple Lacinia tutorial
 * Run the jar using `java -jar <jar_file>`
 * IGraphQL is present at `localhost:8888`
 
-* Demo
+# Demo
 
 ![IGraphQL](https://github.com/tirkarthi/lacinia-tutorial/raw/master/demo.gif)
 
