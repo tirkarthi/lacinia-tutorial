@@ -7,6 +7,7 @@ A simple Lacinia tutorial
 * Clone the repo and run `python createdb.py` to create database as `test.db`
 * Rename `test.db` as `dev.db`
 * Download the jar from [releases](https://github.com/tirkarthi/lacinia-tutorial/releases).
+* Unzip the file with `gunzip <release.gz>`
 * Run the jar using `java -jar <jar_file>`
 * IGraphQL is present at `localhost:8888`
 
