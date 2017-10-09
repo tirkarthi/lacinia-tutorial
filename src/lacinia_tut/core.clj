@@ -44,8 +44,14 @@
                         (columns :artistname)
                         (values [[artistname]])
                         (sql/format))
-        result (jdbc/execute! db insert-stmt)]
-    result))
+        result (jdbc/execute! db insert-stmt)
+        res-query (-> (select :*)
+                      (from :artist)
+                      (order-by [:artistid :desc])
+                      (limit 1)
+                      sql/format)
+        artist (jdbc/query db res-query)]
+    artist))
 
 (def artist-schema
   (-> "schema.edn"
