@@ -12,7 +12,7 @@ A simple Lacinia tutorial
 
 * Demo
 
-![IGraphQL](https://github.com/tirkarthi/lacinia-tut/raw/master/demo.gif)
+![IGraphQL](https://github.com/tirkarthi/lacinia-tutorial/raw/master/demo.gif)
 
 # License
 
